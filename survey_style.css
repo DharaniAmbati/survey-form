@@ -1,0 +1,111 @@
+/* styling of body part of th UI */
+.body {
+  background-color: rgb(243, 243, 205);
+}
+/* div tag border settings */
+ .outdiv {
+    
+    width: 100%;
+    height: 500px;
+    
+} 
+.indiv {
+ border: 2px  black solid;
+ width: 500px;
+ height: 400px;
+ background-color: rgba(255, 0, 208, 0.144);
+ text-align:left;
+ padding-top: 50px;
+ padding-left: 50px;
+ border-radius: 10px;
+}
+#l {
+  width: 100px;
+    color: blue;
+    
+    padding: 5PX;
+}
+#input {
+ 
+  padding-right: 100px;
+}
+/* styling of submiyt and reset buttons */
+.sub {
+  background-color: bisque;
+}
+.reset {
+  background-color: blanchedalmond;
+}
+#set {
+  align-items: center;
+  width: 100px;
+
+}
+
+/*  styling of submit button by giving hover effect */
+.sub:hover {
+    background-color: rgba(0, 128, 0, 0.443);
+    border: 2px solid;
+}
+/*  styling of reset button by giving hover effect */
+.reset:hover {
+background-color: rgba(255, 0, 0, 0.623);
+border: 2px solid;
+}
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #5555559e;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+  
