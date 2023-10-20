@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./survey_popup.css">
+</head>
+<body class="body">
+    <center>
+    <div class="outdiv" id="div">
+      <marquee scrollamount="15" direction="right" behavior="alternate" ><h1>survey form</h1></marquee>
+        <form  class="form-container">
+            <div class="indiv">
+          
+      
+          <label  id="l">FIRST NAME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label><input id="input" type="text" placeholder="enter first name" required>
+          <BR><BR>
+         <label id="l">LAST NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label><input  id="input" type="text" placeholder="enter last name" required>
+         <BR><BR>
+         <label id="l">DATE OF BIRTH :</label><input id="input" type="date" required >
+         <BR><BR>
+         <label id="l">EMAIL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label><input id="input" type="email" placeholder="enter email" required>
+         <BR><BR>
+         <label id="l" > MOBILE NO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</label><input id="input" type="number" placeholder="enter phone no" required>
+         <BR><BR>
+         <label id="l">COUNTRY &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+                  <select  required>
+                      <!-- <optgroup label="select your country"></optgroup> -->
+                      <option>select your country</option>
+                      <option>India</option>
+                      <option>Ausralia</option>
+                      <option>Bangladesh</option>
+                      <option>Brazil</option>
+                      <option>China</option>
+                      <option>France</option>
+                      <option>Vietnam</option>
+                      <option>United States</option>
+                  </select>
+         <BR><BR>
+         <label id="l">GENDER :</label><label id="l" >Female :</label><input  id="input" type="radio" name="gender" >
+         <label id="l">Male :</label><input type="radio" name="gender">
+         <BR><BR>
+         <label id="l"> PROFESSTION &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label><input id="input" type="text"  required >
+         <BR><BR>
+            <div class="popup" onclick="submitform()">
+            <button  type="submit" class="sub" id="set" >Submit 
+          <span class="popuptext" id="myPopup">entered details are mandatory</span></button></div>
+          
+         <button type="reset"  onclick="resetForm()"  class="reset" id="set">Reset</button>
+        </div>
+        </form>
+        
+      </div>
+    </center>
+      <script>
+        function submitform(){
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+        }
+      </script>
+</body>
+</html>
